@@ -18,6 +18,7 @@ export default function NavbarActions() {
 
   return (
     <div className="flex ml-auto items-center space-x-2">
+      <ThemeToggleButton />
       <Button
         variant={"ghost"}
         className="flex items-center rounded-full px-2 py-2"
@@ -25,7 +26,6 @@ export default function NavbarActions() {
         <ShoppingBag size={20} />
         <span className="ml-2 text-sm font-medium">0</span>
       </Button>
-      <ThemeToggleButton />
     </div>
   );
 }
