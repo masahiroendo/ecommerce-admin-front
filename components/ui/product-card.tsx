@@ -31,14 +31,14 @@ export default function ProductCard({ data }: ProductCardProps) {
           fill
           className="aspect-square object-cover rounded-md"
         />
-        <div className="opacity-0 group-hover:opacity-100 absolute transition w-full px-6 bottom-5">
+        <div className="opacity-0 group-hover:opacity-50 absolute transition w-full px-6 bottom-5">
           <div className="flex gap-x-6 justify-center">
             <IconButton
               onClick={() => {}}
               icon={
                 <Expand
                   size={20}
-                  className="text-stone-500 dark:text-stone-300"
+                  className="text-stone-500 dark:text-stone-100"
                 />
               }
             />
@@ -47,7 +47,7 @@ export default function ProductCard({ data }: ProductCardProps) {
               icon={
                 <ShoppingCart
                   size={20}
-                  className="text-stone-500 dark:text-stone-300"
+                  className="text-stone-500 dark:text-stone-100"
                 />
               }
             />

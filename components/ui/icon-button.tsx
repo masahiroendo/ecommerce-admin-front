@@ -16,7 +16,7 @@ export default function IconButton({
     <button
       onClick={onClick}
       className={cn(
-        "flex items-center justify-cente rounded-full border border-stone-500 dark:border-stone-600 shadow-md p-2 hover:scale-110 transition",
+        "flex items-center justify-cente rounded-full bg-white dark:bg-stone-900 border border-stone-500 dark:border-stone-600 shadow-md p-2 hover:scale-110 transition",
         className
       )}
     >
