@@ -4,6 +4,7 @@ import { Urbanist } from "next/font/google";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { ThemeProvider } from "@/providers/theme-provider";
+import ModalProvider from "@/providers/modal-provider";
 
 const font = Urbanist({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className={font.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Header />
+          <ModalProvider />
           {children}
           <Footer />
         </ThemeProvider>
