@@ -5,6 +5,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { ThemeProvider } from "@/providers/theme-provider";
 import ModalProvider from "@/providers/modal-provider";
+import { Toaster } from "@/components/ui/toaster";
 
 const font = Urbanist({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
           <Header />
           <ModalProvider />
           {children}
+          <Toaster />
           <Footer />
         </ThemeProvider>
       </body>
